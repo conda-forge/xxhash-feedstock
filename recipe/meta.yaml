@@ -25,7 +25,7 @@ test:
 
 about:
   home: http://www.xxhash.com/
-  license: BSD
+  license: BSD-2-Clause
   license_file: {{ environ["SRC_DIR"] }}/LICENSE
   summary: Extremely fast hash algorithm
   description: |
