@@ -1,6 +1,6 @@
 mkdir build
 cd build
-cmake ../cmake_unofficial ^
+cmake %CMAKE_ARGS% ../cmake_unofficial ^
       -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
       -DBUILD_SHARED_LIBS=ON ^
       -DCMAKE_BUILD_TYPE=Release
