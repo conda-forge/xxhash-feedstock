@@ -10,7 +10,7 @@ source:
   sha256: aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # The recent history has been quite unstable: https://abi-laboratory.pro/?view=timeline&l=xxhash
     - {{ pin_subpackage("xxhash", max_pin="x.x.x") }}
