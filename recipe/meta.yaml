@@ -1,5 +1,5 @@
 {% set name = "xxHash" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/Cyan4973/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80
+  sha256: 5738270935e7c3d38a79b3adf7c9692566ce7895a25f67de43ad52ab504acd32
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # The recent history has been quite unstable: https://abi-laboratory.pro/?view=timeline&l=xxhash
     - {{ pin_subpackage("xxhash", max_pin="x.x.x") }}
